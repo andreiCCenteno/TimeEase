@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFrameMainActivity"
+    android:background="#EDEDED">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar4"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="App settings"
+                app:titleTextColor="@color/black"
+                android:background="#6C63FF"
+                app:navigationIcon="@drawable/baseline_arrow_back_ios_24"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/toolbar">
+            <Switch
+                android:id="@+id/swtShowNotif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1A73E7"
+                android:text="Show notification"
+                android:textSize="15dp"
+                android:paddingLeft="50dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <Switch
+                android:id="@+id/swtVibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vibrate"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:paddingLeft="80dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintTop_toBottomOf="@id/swtShowNotif"
+                android:background="@color/white"
+                android:enabled="false"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/const1">
+            <TextView
+                android:id="@+id/txtUserProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1A73E7"
+                android:text="User Profile"
+                android:textColor="@color/white"
+                android:paddingLeft="50dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/txtChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Change Password"
+                app:layout_constraintTop_toBottomOf="@id/txtUserProfile"
+                android:textColor="@color/black"
+                android:paddingLeft="80dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/txtBasicInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Basic Info"
+                app:layout_constraintTop_toBottomOf="@id/txtChangePassword"
+                android:textColor="@color/black"
+                android:paddingLeft="80dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                android:clickable="true"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/const2">
+            <TextView
+                android:id="@+id/txtPreference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1A73E7"
+                android:text="Preference"
+                android:textColor="@color/white"
+                android:paddingLeft="50dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <Switch
+                android:id="@+id/txtLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Dark Mode"
+                app:layout_constraintTop_toBottomOf="@id/txtPreference"
+                android:textColor="@color/black"
+                android:paddingLeft="80dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:clickable="true"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondSetupFrameActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FILL UP FORMS"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/baloo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        />
+
+    <EditText
+        android:id="@+id/txtsurname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="Surname"
+        android:textColorHint="@color/inactive"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:inputType="textCapSentences"
+        />
+
+    <EditText
+        android:id="@+id/txtfname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtsurname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:hint="First name"
+        android:inputType="textCapSentences"
+        android:textColorHint="@color/inactive"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/txtmname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtfname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:hint="Middle name (Optional)"
+        android:inputType="textCapSentences"
+        android:textColorHint="@color/inactive"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/thirdnextsetupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/btnformat"
+        android:drawableRight="@drawable/baseline_arrow_forward_24"
+        android:layout_below="@id/txtmname"
+        android:fontFamily="@font/bungee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFrameMainActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="About"
+            app:titleTextColor="@color/black"
+            android:background="#6C63FF"
+            app:navigationIcon="@drawable/baseline_arrow_back_ios_24"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/timelogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:id="@+id/txtProduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TimeEase Production"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp"
+            android:fontFamily="@font/baloo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="75dp"
+            />
+
+        <TextView
+            android:id="@+id/txtDescription1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtProduction"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="TimeEase or Attendance Monitoring using QR codes: Attendance and Time Management System is an integrated software mobile and website application solution that enables automated tracking of student's attendance and time management using QR codes. It is a comprehensive system that helps students manage their workforce more efficiently and effectively."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtWhoWeAre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who We Are"
+        android:textColor="@color/purple_500"
+        android:textSize="25dp"
+        android:fontFamily="@font/baloo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtDescription1"
+        android:layout_marginTop="75dp"
+        />
+
+        <TextView
+            android:id="@+id/txtDescription2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtWhoWeAre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="We are HexTech a team dedicated to providing high-quality services to our customers. Our team is made up of students who have good knowledge in their respective fields, who are passionate about what they do."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtOurMission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Mission"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp"
+            android:fontFamily="@font/baloo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtDescription2"
+            android:layout_marginTop="75dp"
+            />
+
+        <TextView
+            android:id="@+id/txtDescription3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtOurMission"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="Our mission is to make a positive impact in the world by providing sustainable and innovative solutions to our customers' needs. We are committed to maintaining the highest standards of quality and ethical practices in all aspects of our business."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtOurVision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Vision"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp"
+            android:fontFamily="@font/baloo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtDescription3"
+            android:layout_marginTop="75dp"
+            />
+
+        <TextView
+            android:id="@+id/txtDescription4"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtOurVision"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/brawler"
+            android:text="We envision a world where technology is used for the betterment of society, and where businesses prioritize the well-being of people and the planet. We strive to be at the forefront of this movement, and to inspire others to join us in creating a better future."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottomnav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/txtDescription4"
+            android:layout_alignParentBottom="true"
+            android:background="#6C63FF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:paddingTop="35dp"
+                android:paddingBottom="55dp"
+                android:text="@string/copyright"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
